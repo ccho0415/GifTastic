@@ -31,7 +31,6 @@ $(".animal").on("click", function(){
   $("#gifSpot")
     .prepend($("<p>")
       .text("Rating : " + results[i].rating)
-      .attr("class", "gifText"))
     .prepend($("<img>")
       .attr("src", results[i].images.fixed_height_still.url)
       .attr("alt", "animal gif")
