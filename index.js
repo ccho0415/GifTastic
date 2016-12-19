@@ -25,19 +25,24 @@ $(".animal").on("click", function(){
       }).done(function(response) {
         console.log(response);
           var results = response.data;
-
         for (var i = 0; i < results.length; i++) {
-
+          var newurl1 = results[i].images.fixed_height_still.url
+            newurl2 = newurl1.replace("http", "https");
+            newurl3 = newurl2.replace("httpss", "https");
+            console.log(newurl2);
+            console.log(newurl3);
+          var newurl4 = results[i].images.fixed_height.url
+            newurl5 = newurl4.replace("http", "https");
+            newurl6 = newurl5.replace("httpss", "https");
   $("#gifSpot")
-    .prepend($("<p>")
-      .text("Rating : " + results[i].rating))
+    .prepend($("<p>").text("Rating : " + results[i].rating))
     .prepend($("<img>")
-      .attr("src", results[i].images.fixed_height_still.url)
+      .attr("src", newurl3)
       .attr("alt", "animal gif")
       .attr("data-state", "still")
       .attr("class", "gif")
-      .attr("data-still", results[i].images.fixed_height_still.url)
-      .attr("data-animate", results[i].images.fixed_height.url));
+      .attr("data-still", newurl3)
+      .attr("data-animate", newurl6));
         // ==================================
         }
   $(".gif").on("click", function() {
