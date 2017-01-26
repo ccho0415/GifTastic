@@ -1,5 +1,29 @@
+#button-view{
+	margin-top: 50px;
+}
+#button-view{
+	margin-left: 25px;
+}
 .btn-primary{
-	margin-left: 20px;
-	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+img{
+	float:left;
+}
+#add-button{
+	margin-right: 50px;
+	margin-top: 0px;
+	margin-left: 5px;
+}
+#button-form{
+	margin-top: 5px;
+}
+#site-title{
+	color: black;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: -3px;
 }
